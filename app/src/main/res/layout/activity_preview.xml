@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".PreviewActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:text="@string/priview_outlet_info"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+                <TableLayout
+                    android:id="@+id/simpleTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="1"> <!-- stretch the second column of the layout-->
+
+                    <!-- first row of the table layout-->
+                    <TableRow
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:minLines="3"
+                            android:text="@string/outlet_name"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/outlet_name_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/retailer_gcc_code"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/retailer_gcc_code_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/retailer_name"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/retailer_name_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/mobile_no"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/retailer_mobile_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/outlet_type"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/outlet_type_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/distributor_name"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/distributor_name_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/aic_name"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/aic_name_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/asm_name"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/asm_name_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:text="@string/outlet_address"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/outlet_address_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="2"
+                            android:padding="10dp"
+                            android:text="@string/IsKnownAboutScheme"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/is_known_about_scheme_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="2"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/present_scheme_details"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/present_scheme_details_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/SchemeMediaType"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/scheme_media_type_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:text="@string/IsFacilitatedByScheme"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/is_facilitated_by_scheme_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/DateOfScheme"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/date_of_scheme_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:text="@string/IsWrittenRecordAvailablePreview"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/is_written_record_available_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/LatestChallanDate"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/latest_chalan_date_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/ChallanAmount"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/chalan_amount_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/ChallanType"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/does_got_any_chalan_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:minLines="3"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/DoesExpiredProductAvailable"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/does_expired_product_available_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:text="@string/DoesSatisfiedWithSallesOfficerPreview"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/does_satisfied_with_sales_officer_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/DoesSatisfiedWithProductOrderAndService"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/does_satisfied_with_product_order_And_service_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:text="@string/SallesOfficerVisitingDayPreview"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/sales_officer_visiting_day_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/DoesGotLatestDiscountOffer"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/does_got_latest_discount_offer_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:text="@string/WillGetAnyDiscountOfferFromDistributorPreview"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/will_get_any_discount_offer_from_distributor_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="3"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/DoesCocaColaLabelAvailable"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/does_cocacola_label_available_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:text="@string/IsGccCodeAvailable"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/is_gcc_code_available_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="2"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="@string/CommentsType"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/comments_type_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="2"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="@string/comment"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/comments_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:weightSum="2">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:text="@string/other_comments"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/comment_details_preview"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:minLines="4"
+                            android:padding="10dp"
+                            android:singleLine="false"
+                            android:textColor="#000"
+                            android:textSize="12sp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+                <ImageView
+                    android:id="@+id/signature_preview"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:text="@string/signature"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <ImageView
+                        android:id="@+id/shop_img_one_preview"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:layout_marginEnd="10dp" />
+
+                    <ImageView
+                        android:id="@+id/shop_img_two_preview"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerInside"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/shop_img_three_preview"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="centerInside"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:text="@string/shop_image"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <ImageButton
+                    android:id="@+id/preview_previous_button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="50dp"
+                    android:background="@drawable/previous_btn" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_margin="20dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

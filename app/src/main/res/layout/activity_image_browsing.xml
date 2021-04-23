@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.InfinigentConsulting.NoActionBar">
+
+
+        <ImageView
+            android:id="@+id/backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/banner" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <ImageButton
+                android:id="@+id/signature_upload"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/signature"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <ImageButton
+                    android:id="@+id/shop_img_one"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:layout_marginEnd="10dp" />
+
+                <ImageButton
+                    android:id="@+id/shop_img_two"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:id="@+id/shop_img_three"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="centerInside"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/shop_image"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--  <androidx.appcompat.widget.AppCompatButton
+                  android:id="@+id/_submit_img"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="30dp"
+                  android:background="@drawable/btn_red"
+                  android:text="ADD IMAGE"
+                  android:layout_margin="20dp"
+                  android:layout_gravity="center_horizontal"
+                  android:textColor="@color/black"/>-->
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="30dp"
+                    android:background="#ffff00"
+                    android:text="@string/preview"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:background="#11FF00"
+                    android:text="@string/submit"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/img_previous_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/previous_btn" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bgBottomNavigation"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_navigation" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

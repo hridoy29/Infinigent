@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InfinigentConsulting" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimaryVariant">#951A28</item>
+        <item name="colorOnPrimary">@color/white</item>
+     <item name="android:textColorPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#ff0000</item>
+        <item name="colorPrimary">#AA1919</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--  theme for toolbar  -->
+    <style name="ToolBarTheme" parent="Theme.InfinigentConsulting">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
+    <style name="Theme.InfinigentConsulting.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.InfinigentConsulting.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.InfinigentConsulting.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,3 @@
+include ':signature_pad'
+include ':app'
+rootProject.name = "Infinigent Consulting"

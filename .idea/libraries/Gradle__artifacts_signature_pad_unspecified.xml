@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:signature_pad:unspecified">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/signature_pad/build/.transforms/d6b64bcfac70e41eac62813f64c59628/jetified-signature_pad/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/signature_pad/build/.transforms/d6b64bcfac70e41eac62813f64c59628/jetified-signature_pad/res" />
+      <root url="file://$PROJECT_DIR$/signature_pad/build/.transforms/d6b64bcfac70e41eac62813f64c59628/jetified-signature_pad/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

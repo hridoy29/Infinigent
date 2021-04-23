@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="5"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/input_userid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="User IDs"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#999" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#999" />
+
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="@string/number"
+        android:inputType="number"
+        android:maxLength="3"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#999" />
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_me"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_weight="0.2"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_red"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

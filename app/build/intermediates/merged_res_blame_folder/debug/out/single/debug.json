@@ -1,0 +1,390 @@
+[
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sign_brows.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\sign_brows.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_splash.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-mdpi\\ic_splash.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_activity_status.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout-v21\\activity_status.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_audited_scheme_details.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_audited_scheme_details.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_status_list_item.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\status_list_item.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scheme_details.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_scheme_details.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clear_scheme.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\clear_scheme.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_convenience_store.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\convenience_store.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_text_border.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\edit_text_border.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bottom_navigation_selector.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\bottom_navigation_selector.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_eating.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\eating.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_log_out.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\log_out.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_digital_marketing.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\digital_marketing.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_television.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\television.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signature_pad.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_signature_pad.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upload_sku.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\upload_sku.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_audit_input.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\audit_input.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_status.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_status.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_printer.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\printer.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\border.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_splash_bg.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\splash_bg.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logout.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\logout.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_happy_partner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\happy_partner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_previous_btn.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\previous_btn.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_banner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable-xhdpi\\banner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sales_person.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\sales_person.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logo.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_red.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\btn_red.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_image_browsing.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_image_browsing.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_hygiene_audit.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\hygiene_audit.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addbutton.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\addbutton.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_scheme_audit.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_scheme_audit.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_settings.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_splash.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xhdpi\\ic_splash.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_hygiene_audit.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_hygiene_audit.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_scheme_status_list_item.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\scheme_status_list_item.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_banner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable-xxhdpi\\banner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_preview.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_preview.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_splash.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_splash.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_home.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\home.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_status.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\status.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_right_arrow.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\right_arrow.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_setting.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\setting.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_auditview.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\auditview.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_clear.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\clear.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_banner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable-ldpi\\banner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_main.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\content_main.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_cardview_components.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\cardview_components.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xhdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_banner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable-mdpi\\banner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_next.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\next.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_splash.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-hdpi\\ic_splash.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_banner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable-hdpi\\banner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_manual_print.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\manual_print.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scheme_auditt.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\scheme_auditt.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_grocery.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\grocery.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_banner.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable-xxxhdpi\\banner.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sync.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\sync.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_splash.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_splash.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_both.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\both.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_outlet_details.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\activity_outlet_details.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_left_arrow.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\left_arrow.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_upload_qn.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\upload_qn.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_drop_down_arrow.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\drop_down_arrow.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_image_brows.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\image_brows.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_green.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\drawable\\btn_green.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\layout_spinner_layout.xml.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\layout\\spinner_layout.xml"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    }
+]

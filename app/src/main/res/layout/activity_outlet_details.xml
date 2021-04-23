@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.InfinigentConsulting.NoActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:titleEnabled="false"
+            android:background="@android:color/transparent"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/banner"
+                    app:layout_collapseMode="parallax"/>
+            </RelativeLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:subtitleTextColor="@color/white"
+                app:theme="@style/ToolBarTheme"
+                app:titleTextColor="@color/white"
+                tools:titleTextColor="@color/white"
+                app:popupTheme="@style/Theme.InfinigentConsulting.PopupOverlay"
+                />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <LinearLayout
+            android:id="@+id/outlet_details_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/outlet_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/outlet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/retailer_gcc_code"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/retailer_gcc_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/retailer_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/retailer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text="@string/NA"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/mobile_no"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/retailer_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/outlet_type"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/outlet_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/distributor_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/distributor_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/aic_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/aic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/asm_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/asm_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/outlet_address"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/outlet_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <ImageButton
+                android:id="@+id/outlate_previous_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/next" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bgBottomNavigation"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_navigation" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

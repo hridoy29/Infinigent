@@ -1,0 +1,4 @@
+#Wed Apr 21 04:11:58 BDT 2021
+base.0=D\:\\QuadTheory\\Infiginate\\sazol\\V11.0.0.0\\Infinigent_20thApril\\Infinigent\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

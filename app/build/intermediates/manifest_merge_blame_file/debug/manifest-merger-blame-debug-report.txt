@@ -1,0 +1,132 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.infinigentconsulting"
+4    android:versionCode="1"
+5    android:versionName="1.1.0.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:7:5-76
+13-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:7:22-73
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:9:5-65
+15-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:9:22-62
+16
+17    <uses-feature android:name="android.hardware.camera" />
+17-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:11:5-60
+17-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:11:19-57
+18
+19    <application
+19-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:13:5-57:19
+20        android:allowBackup="true"
+20-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:14:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.1] C:\Users\User\.gradle\caches\transforms-2\files-2.1\c560b8721f05ca12656603dd382025ab\core-1.3.1\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_splash"
+23-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:15:9-41
+24        android:label="@string/app_name"
+24-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:16:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:17:9-54
+26        android:supportsRtl="true"
+26-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:18:9-35
+27        android:theme="@style/Theme.InfinigentConsulting.NoActionBar"
+27-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:19:9-70
+28        android:usesCleartextTraffic="true" >
+28-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:20:9-44
+29        <activity android:name="com.example.infinigentconsulting.AuditedSchemeDetails" />
+29-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:21:9-67
+29-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:21:19-55
+30        <activity android:name="com.example.infinigentconsulting.StatusActivity" />
+30-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:22:9-52
+30-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:22:19-49
+31        <activity android:name="com.example.infinigentconsulting.SettingsActivity" />
+31-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:23:9-54
+31-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:23:19-51
+32        <activity android:name="com.example.infinigentconsulting.ImageBrowsingActivity" />
+32-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:24:9-59
+32-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:24:19-56
+33        <activity
+33-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:25:9-28:55
+34            android:name="com.example.infinigentconsulting.SchemeDetailsActivity"
+34-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:26:13-50
+35            android:isScrollContainer="true"
+35-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:27:13-45
+36            android:windowSoftInputMode="adjustPan" />
+36-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:28:13-52
+37        <activity
+37-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:29:9-32:55
+38            android:name="com.example.infinigentconsulting.OutletDetailsActivity"
+38-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:30:13-50
+39            android:isScrollContainer="true"
+39-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:31:13-45
+40            android:windowSoftInputMode="adjustPan" />
+40-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:32:13-52
+41        <activity
+41-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:33:9-36:55
+42            android:name="com.example.infinigentconsulting.SignaturePadActivity"
+42-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:34:13-49
+43            android:isScrollContainer="true"
+43-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:35:13-45
+44            android:windowSoftInputMode="adjustPan" />
+44-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:36:13-52
+45        <activity
+45-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:37:9-45:20
+46            android:name="com.example.infinigentconsulting.SplashActivity"
+46-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:38:13-43
+47            android:theme="@style/SplashTheme" >
+47-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:39:13-47
+48            <intent-filter>
+48-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:40:13-44:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:41:17-69
+49-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:41:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:43:17-77
+51-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:43:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:46:9-50:55
+55            android:name="com.example.infinigentconsulting.LoginActivity"
+55-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:47:13-42
+56            android:isScrollContainer="true"
+56-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:48:13-45
+57            android:theme="@style/Theme.InfinigentConsulting.NoActionBar"
+57-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:49:13-74
+58            android:windowSoftInputMode="adjustPan" />
+58-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:50:13-52
+59        <activity
+59-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:51:9-53:77
+60            android:name="com.example.infinigentconsulting.MainActivity"
+60-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:52:13-41
+61            android:theme="@style/Theme.InfinigentConsulting.NoActionBar" />
+61-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:53:13-74
+62        <activity android:name="com.example.infinigentconsulting.HygieneAuditActivity" />
+62-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:54:9-58
+62-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:54:19-55
+63        <activity android:name="com.example.infinigentconsulting.SchemeAuditActivity" />
+63-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:55:9-57
+63-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:55:19-54
+64        <activity android:name="com.example.infinigentconsulting.PreviewActivity" />
+64-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:56:9-53
+64-->D:\QuadTheory\Infiginate\sazol\V11.0.0.0\Infinigent_20thApril\Infinigent\app\src\main\AndroidManifest.xml:56:19-50
+65    </application>
+66
+67</manifest>

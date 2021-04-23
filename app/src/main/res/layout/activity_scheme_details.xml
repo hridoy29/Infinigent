@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.InfinigentConsulting.NoActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/banner" />
+
+            </RelativeLayout>
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/scheme_details_cl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/IsKnownAboutScheme"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/is_known_about_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/is_known_about_scheme_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_known_about_scheme_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_known_about_scheme_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/present_scheme_details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/present_scheme_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/SchemeMediaType"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/scheme_media_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#999" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/IsFacilitatedByScheme"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/is_facilitated_by_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/is_facilitated_by_scheme_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_facilitated_by_scheme_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_facilitated_by_scheme_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/DateOfScheme"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_of_scheme_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@drawable/edit_text_border"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:textColor="@color/black" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/date_of_scheme_date_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/yellow"
+                    android:text="@string/date"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/IsWrittenRecordAvailable"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/is_written_record_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/is_written_record_available_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_written_record_available_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_written_record_available_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/LatestChallanDate"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/latest_chalan_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="@drawable/edit_text_border"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/latest_chalan_date_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/yellow"
+                    android:text="@string/date"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/ChallanAmount"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/chalan_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/ChallanType"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/does_got_any_chalan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/DoesExpiredProductAvailable"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/does_expired_product_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/does_expired_product_available_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_expired_product_available_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_expired_product_available_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/DoesSatisfiedWithSallesOfficer"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/does_satisfied_with_sales_officer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/does_satisfied_with_sales_officer_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_satisfied_with_sales_officer_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_satisfied_with_sales_officer_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/DoesSatisfiedWithProductOrderAndService"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/does_satisfied_with_product_order_And_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/does_satisfied_with_product_order_And_service_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_satisfied_with_product_order_And_service_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_satisfied_with_product_order_And_service_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/SallesOfficerVisitingDay"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/sales_officer_visiting_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/DoesGotLatestDiscountOffer"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/does_got_latest_discount_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/does_got_latest_discount_offer_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_got_latest_discount_offer_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_got_latest_discount_offer_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/WillGetAnyDiscountOfferFromDistributor"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/will_get_any_discount_offer_from_distributor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/will_get_any_discount_offer_from_distributor_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/will_get_any_discount_offer_from_distributor_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/will_get_any_discount_offer_from_distributor_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/DoesCocaColaLabelAvailable"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/does_cocacola_label_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/does_cocacola_label_available_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_cocacola_label_available_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/does_cocacola_label_available_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/IsGccCodeAvailable"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- add RadioGroup which contain the many RadioButton-->
+            <RadioGroup
+                android:id="@+id/is_gcc_code_available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:id="@+id/is_gcc_code_available_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/yes"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_gcc_code_available_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/no"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/is_gcc_code_available_not_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/not_required"
+                    android:textSize="20sp" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/CommentsType"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/comments_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/comment"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:clickable="true"
+                android:drawableEnd="@drawable/drop_down_arrow"
+                android:drawableRight="@drawable/drop_down_arrow"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="@string/other_comments"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/comment_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/scheme_details_previous_button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/previous_btn" />
+
+                <ImageButton
+                    android:id="@+id/scheme_details_next_button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/next" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bgBottomNavigation"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/bottom_navigation" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
