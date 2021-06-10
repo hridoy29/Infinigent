@@ -679,7 +679,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/Number";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/Number";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<NumberClass> NumberArrayList = new ArrayList();
             URL url = null;
@@ -776,7 +776,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/User";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/User";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<UserClass> UserArrayList = new ArrayList();
             URL url = null;
@@ -878,7 +878,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/DistributorDetails";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/DistributorDetails";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> DistributorArrayList = new ArrayList();
             URL url = null;
@@ -978,7 +978,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/SchemeName";            //"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/SchemeName";            //"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> SchemeNameArrayList = new ArrayList();
             URL url = null;
@@ -1077,7 +1077,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/AIC";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/AIC";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> AICArrayList = new ArrayList();
             URL url = null;
@@ -1177,7 +1177,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/ASM";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/ASM";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> ASMArrayList = new ArrayList();
             URL url = null;
@@ -1277,7 +1277,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/CommentsType";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/CommentsType";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<CommentsTypeClass> CommentsTypeArrayList = new ArrayList();
             URL url = null;
@@ -1376,7 +1376,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://api.infinigentconsulting.com/api/Commnets";//"http://202.126.122.85:71/api/Division";
+            String str = "http://202.126.122.85:72/api/Commnets";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<CommnetsClass> CommentsArrayList = new ArrayList();
             URL url = null;
