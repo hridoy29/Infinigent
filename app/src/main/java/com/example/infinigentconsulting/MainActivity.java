@@ -56,20 +56,18 @@ public class MainActivity extends AppCompatActivity {
     private CardViewAdapter adapter;
     private List<CardElement> cardElements;
     private boolean IsInternetAvaiable = false;
+    private boolean IsNumberFromDBFound=false;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         myDb = new DatabaseHelper(this);
         recyclerView = findViewById(R.id.recycler_view);
-
         cardElements = new ArrayList<CardElement>();
-
         adapter = new CardViewAdapter(this, cardElements, new CustomItemClickListener() {
             @Override
             public void onItemClick(View v, int position) {
@@ -109,10 +107,8 @@ public class MainActivity extends AppCompatActivity {
                                 @Override
                                 public void onClick(View v) {
                                     dialog.dismiss();
-
                                     if (internetIsConnected() == true) {
                                         try {
-
                                             if (myDb.isSchemeDataAvailableAtLocalDB() == true) {
                                                 Toast.makeText(MainActivity.this, "Sending  Information To Main DB. Please wait...", Toast.LENGTH_LONG).show();
                                                 try {
@@ -120,6 +116,17 @@ public class MainActivity extends AppCompatActivity {
                                                     SentImageByApi();
                                                     AuditShopDetailsDataByApi();
                                                     SchemeAuditParentDataByApi();
+                                                    syncDataToLocalDBWithOutNumberTable();
+                                                }
+                                                catch (Exception ex) {
+                                                    Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+                                                }
+                                            }
+                                            else
+                                            {
+                                                try {
+                                                    syncDataToLocalDBWithNumberTable();
+                                                    syncDataToLocalDBWithOutNumberTable();
                                                 }
                                                 catch (Exception ex) {
                                                     Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
@@ -127,34 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                                             }
                                             Toast.makeText(MainActivity.this, "Collecting Information. Please wait...", Toast.LENGTH_LONG).show();
-                                            Integer Counter = myDb.deleteData();
-                                            if (Counter == 8) {
-                                                try {
-                                                    new GetNumberList().execute();
-                                                    new GetListofUser().execute();
-                                                    new GetDistributorList().execute();
-                                                    new GetSchemeNameList().execute();
-                                                    new GetAICList().execute();
-                                                    new GetASMList().execute();
-                                                    new GetCommentsTypeList().execute();
-                                                    new GetCommentsList().execute();
-                                                }
-                                                catch (Exception ex) {
-                                                    Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
-                                                }
 
-                                            } else {
-                                                Toast.makeText(MainActivity.this, "404 Server Error", Toast.LENGTH_LONG).show();
-                                            }
-                                            if (myDb.isSchemeDataAvailableAtLocalDB() == true) {
-                                                Toast.makeText(MainActivity.this, "Sending  Information To Main DataBase. Please wait...", Toast.LENGTH_LONG).show();
-                                                try {
-                                                    // myDb.deleteTRNData();
-                                                } catch (Exception ex) {
-                                                    Toast.makeText(MainActivity.this, "Internet Is Not Available,Please Check Your Internet Connection.", Toast.LENGTH_LONG).show();
-
-                                                }
-                                            }
                                         } catch (Exception ex) {
                                             Toast.makeText(MainActivity.this, "Internet Is Not Available,Please Check Your Internet Connection.", Toast.LENGTH_LONG).show();
                                         }
@@ -196,14 +176,11 @@ public class MainActivity extends AppCompatActivity {
                                             myDb.deleteTRNData();
                                         } catch (Exception ex) {
                                             Toast.makeText(MainActivity.this, "Internet Is Not Available,Please Check Your Internet Connection.", Toast.LENGTH_LONG).show();
-
                                         }
                                     }
-
                                 } catch (Exception ex) {
                                     Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
                                 }
-
                             }
                         });
 
@@ -211,7 +188,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
 
         try {
             RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
@@ -251,9 +227,12 @@ public class MainActivity extends AppCompatActivity {
         String oldNumber = GetPreviousNumber(Id);
 
         if (oldNumber.length() == 0) {
+            syncDataToLocalDBWithNumberTable();
             return;
         }
-        _TestReplaceOldNumberInSQLdb(Id, oldNumber);
+        else {
+            _TestReplaceOldNumberInSQLdb(Id, oldNumber);
+        }
 
     }
 
@@ -365,7 +344,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    private void syncDataToLocalDBWithNumberTable(){
 
+        Integer Counter = myDb.deleteDataOnlyNumberTable();
+        if (Counter == 1) {
+            try {
+                new GetNumberList().execute();
+            }
+            catch (Exception ex) {
+                Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        }
+        else {
+            Toast.makeText(MainActivity.this, "404 Server Error", Toast.LENGTH_LONG).show();
+        }
+    }
+    private void syncDataToLocalDBWithOutNumberTable(){
+        Integer Counter = myDb.deleteData();
+        if (Counter == 7) {
+            try {
+
+                new GetListofUser().execute();
+                new GetDistributorList().execute();
+                new GetSchemeNameList().execute();
+                new GetAICList().execute();
+                new GetASMList().execute();
+                new GetCommentsTypeList().execute();
+                new GetCommentsList().execute();
+            }
+            catch (Exception ex) {
+                Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        }
+        else {
+            Toast.makeText(MainActivity.this, "404 Server Error", Toast.LENGTH_LONG).show();
+        }
+    }
     private void _TestReplaceOldNumberInSQLdb(int Id, String Number) {
 
         NumberClass _number = new NumberClass(Id, Number);
@@ -379,15 +393,49 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     NumberClass s = response.body();
                     if (s.Id != 0) {
+                        syncDataToLocalDBWithNumberTable();
                         Toast.makeText(MainActivity.this, "Successful", Toast.LENGTH_LONG).show();
                     } else {
-                        Toast.makeText(MainActivity.this, "Invalid", Toast.LENGTH_LONG).show();
+                        final AlertDialog dialog = new AlertDialog.Builder(MainActivity.this, R.style.Theme_AppCompat_Dialog_Alert)
+                                .setTitle("INTERNET CONNECTIVITY ERROR!!!")
+                                .setMessage("Sync Again Please")
+                                .setPositiveButton("Yes", null)
+                                .setNegativeButton("No", null)
+                                .show();
+                        Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                        positiveButton.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                dialog.dismiss();
+                                try {
+                                    sentLatestNumberByApi();
+                                } catch (Exception ex) {
+                                    Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+                                }
+                            }
+                        });
                     }
                 } catch (Exception ex) {
-                    Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+                    final AlertDialog dialog = new AlertDialog.Builder(MainActivity.this, R.style.Theme_AppCompat_Dialog_Alert)
+                            .setTitle("INTERNET CONNECTIVITY ERROR!!!")
+                            .setMessage("Sync Again Please")
+                            .setPositiveButton("Yes", null)
+                            .setNegativeButton("No", null)
+                            .show();
+                    Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+                    positiveButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                            try {
+                                sentLatestNumberByApi();
+                            } catch (Exception ex) {
+                                Toast.makeText(MainActivity.this, ex.getMessage(), Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    });
                 }
             }
-
             @Override
             public void onFailure(Call<NumberClass> call, Throwable t) {
                 Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_LONG).show();
@@ -679,7 +727,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/Number";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/Number";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<NumberClass> NumberArrayList = new ArrayList();
             URL url = null;
@@ -776,7 +824,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/User";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/User";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<UserClass> UserArrayList = new ArrayList();
             URL url = null;
@@ -878,7 +926,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/DistributorDetails";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/DistributorDetails";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> DistributorArrayList = new ArrayList();
             URL url = null;
@@ -978,7 +1026,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/SchemeName";            //"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/SchemeName";            //"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> SchemeNameArrayList = new ArrayList();
             URL url = null;
@@ -1077,7 +1125,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/AIC";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/AIC";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> AICArrayList = new ArrayList();
             URL url = null;
@@ -1177,7 +1225,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/ASM";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/ASM";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<GenericClass> ASMArrayList = new ArrayList();
             URL url = null;
@@ -1277,7 +1325,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/CommentsType";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/CommentsType";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<CommentsTypeClass> CommentsTypeArrayList = new ArrayList();
             URL url = null;
@@ -1376,7 +1424,7 @@ public class MainActivity extends AppCompatActivity {
             JSONObject jObject;
             JSONArray jsonArray = null;
             int i = 0;
-            String str = "http://202.126.122.85:72/api/Commnets";//"http://202.126.122.85:71/api/Division";
+            String str = "http://api.infinigentconsulting.com/api/Commnets";//"http://202.126.122.85:71/api/Division";
             String response = "";
             ArrayList<CommnetsClass> CommentsArrayList = new ArrayList();
             URL url = null;

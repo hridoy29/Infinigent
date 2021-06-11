@@ -478,7 +478,7 @@ public class ImageBrowsingActivity extends AppCompatActivity {
             String response = "";
             URL url = null;
             try {
-                url = new URL("http://202.126.122.85:72/api/Tests");
+                url = new URL("http://api.infinigentconsulting.com/api/Tests");
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }

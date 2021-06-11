@@ -2,12 +2,15 @@ package com.example.infinigentconsulting;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.net.ConnectivityManager;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "qt_infinigentdb.db";
@@ -588,22 +591,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor res = db.rawQuery("SELECT Number   FROM TRN_Number Where Id='" + id + "'", null);
         return res;
     }
-
-    public Integer deleteData() {
-
+    public Integer  deleteDataOnlyNumberTable(){
         SQLiteDatabase db = this.getWritableDatabase();
         Integer count = 0;
         try {
             db.beginTransaction();
             db.delete(TABLE_NAME_TRN_Number, null, null);
             count++;
+            db.setTransactionSuccessful();
+
+        } catch (Exception exception) {
+
+            db.endTransaction();
+        } finally {
+            db.endTransaction();
+        }
+        if (count == 1) {
+            return count;
+        } else {
+            return 0;
+        }
+    }
+    public Integer deleteData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Integer count = 0;
+        try {
+            db.beginTransaction();
+
             db.delete(TABLE_NAME_LU_User, null, null);
             count++;
             db.delete(TABLE_NAME_LU_AIC, null, null);
             count++;
             db.delete(TABLE_NAME_LU_ASM, null, null);
             count++;
-
             db.delete(TABLE_NAME_LU_CommentsType, null, null);
             count++;
             db.delete(TABLE_NAME_LU_Commnets, null, null);
@@ -620,7 +640,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         } finally {
             db.endTransaction();
         }
-        if (count == 8) {
+        if (count == 7) {
             return count;
         } else {
             return 0;
